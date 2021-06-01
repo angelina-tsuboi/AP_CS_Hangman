@@ -1,18 +1,22 @@
 var words = [
 	"axolotl",
-	"javascript",
-	"mongodb",
-	"json",
-	"java",
-	"html",
-	"css",
-	"c",
-	"csharp",
-	"golang",
-	"kotlin",
-	"php",
-	"sql",
-	"ruby"
+	"rottweiler",
+	"jellygraph",
+	"cowpuncher",
+	"jackhammer",
+	"witchcraft",
+	"cryptogram",
+	"bankruptcy",
+	"motorcycle",
+	"technician",
+	"radiation",
+	"photorealism",
+	"pigment",
+	"exhibit",
+  "albatross",
+  "anemone",
+  "secretary",
+  "apartment"
 ]
 
 window.onload = function(e){ 
@@ -51,7 +55,12 @@ function useCustomWord(){
     alert("Word must be longer than four characters");
     return;
   }
-
+  document.getElementById("starter").style.display = 'none';
+  document.getElementById("game").style.display = 'block';  
+  answer = custom;
+  document.getElementById('maxWrong').innerHTML = maxWrong;
+  generateButtons();
+  guessedWord();
 }
 
 function useRandomWord(){

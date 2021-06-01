@@ -6,6 +6,10 @@
     margin-top: 2rem;
 }
 
+#wordSpotlight{
+    margin-bottom: 2rem;
+}
+
 .form-control{
     width: 60%;
     margin: auto;
@@ -16,6 +20,10 @@
 .or{
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+.reset{
+    margin-top: 2rem;
 }
 
 .options{
