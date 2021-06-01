@@ -1,0 +1,25 @@
+#starter{
+    text-align: center;
+}
+
+.title{
+    margin-top: 2rem;
+}
+
+.form-control{
+    width: 60%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.or{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.options{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: rgb(91, 92, 107);
+}

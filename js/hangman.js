@@ -1,5 +1,5 @@
-var programming_languages = [
-	"python",
+var words = [
+	"axolotl",
 	"javascript",
 	"mongodb",
 	"json",
@@ -15,6 +15,11 @@ var programming_languages = [
 	"ruby"
 ]
 
+window.onload = function(e){ 
+  document.getElementById("starter").style.display = 'block';
+  document.getElementById("game").style.display = 'none';  
+}
+
 let answer = '';
 let maxWrong = 6;
 let mistakes = 0;
@@ -22,7 +27,7 @@ let guessed = [];
 let wordStatus = null;
 
 function randomWord() {
-  answer = programming_languages[Math.floor(Math.random() * programming_languages.length)];
+  answer = words[Math.floor(Math.random() * words.length)];
 }
 
 function generateButtons() {
