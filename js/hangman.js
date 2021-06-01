@@ -45,6 +45,21 @@ function generateButtons() {
   document.getElementById('keyboard').innerHTML = buttonsHTML;
 }
 
+function useCustomWord(){
+  let custom  = document.getElementById('customWord').value;
+  if(custom.length < 5){
+    alert("Word must be longer than four characters");
+    return;
+  }
+
+}
+
+function useRandomWord(){
+  document.getElementById("starter").style.display = 'none';
+  document.getElementById("game").style.display = 'block';  
+  startGame();
+}
+
 function handleGuess(chosenLetter) {
   guessed.indexOf(chosenLetter) === -1 ? guessed.push(chosenLetter) : null;
   document.getElementById(chosenLetter).setAttribute('disabled', true);
@@ -98,8 +113,12 @@ function reset() {
   generateButtons();
 }
 
-document.getElementById('maxWrong').innerHTML = maxWrong;
+function startGame(){
+  document.getElementById('maxWrong').innerHTML = maxWrong;
 
-randomWord();
-generateButtons();
-guessedWord();
+  randomWord();
+  generateButtons();
+  guessedWord();
+  
+}
+
